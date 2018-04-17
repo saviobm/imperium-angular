@@ -1,0 +1,56 @@
+<html>
+  
+
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+    <script>
+      $( document ).ready(function() {
+        block;
+      });
+
+      $(".dropdown-trigger").dropdown();
+    </script>
+
+    <!--<ul id="dropdownCadastro" class="dropdown-content">
+      <li><a [class.active]="aba == 'aluno'" (click)="aba == 'aluno'">Aluno</a></li>
+      <li><a href="#!">Treino</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">...</a></li>
+    </ul>-->
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>        
+        <ul class="right hide-on-med-and-down">
+          <li><a [class.active]="aba == 'aluno'" (click)="aba = 'aluno'">Cadastro Aluno</a></li>
+          <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+          <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+          <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdownCadastro">Cadastro<i class="material-icons right">arrow_drop_down</i></a></li>
+
+
+          <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+        </ul>
+      </div>
+    </nav>    
+
+    <div class="container" [ngSwitch]="aba">
+        <div *ngSwitchCase="'aluno'">
+          <br><br>
+          <app-cadastro-aluno></app-cadastro-aluno></div>
+        <div *ngSwitchDefault>
+          <br><br>
+          Home
+        </div>
+    </div>
+
+  </body>
+
+</html>
