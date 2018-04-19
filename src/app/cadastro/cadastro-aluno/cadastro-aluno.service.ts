@@ -19,7 +19,7 @@ export class CadastroAlunoService {
 
   salvar(aluno: Aluno): void {
 
-    /*this.http.post(this.url + '/salvar', aluno, { headers: this.headers  })
+   /* this.http.post(this.url + '/salvar', aluno, { headers: this.headers  })
         .toPromise().then(this.retornoSucesso).catch(this.retornoErro);*/
 
     this.http.post(this.url + '/salvar', aluno, this.optionsAntigo)
@@ -28,9 +28,16 @@ export class CadastroAlunoService {
   }
 
   retornoSucesso(response: Response): void {
+
+    const aluno: Aluno = response.json() as Aluno;
+
+    console.log(aluno.id);
+
   }
 
   retornoErro(error: Response | any): void {
+
+    console.log(error);
 
   }
 

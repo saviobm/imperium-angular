@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     BrowserModule,
-    CadastroModule,        
+    CadastroModule,
     CommonModule,
     HttpClientModule
   ],

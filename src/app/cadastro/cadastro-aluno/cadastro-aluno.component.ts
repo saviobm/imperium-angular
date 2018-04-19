@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-cadastro-aluno',
   templateUrl: './cadastro-aluno.component.html',
-  styleUrls: ['./cadastro-aluno.component.css']  
+  styleUrls: ['./cadastro-aluno.component.css']
 })
 export class CadastroAlunoComponent implements OnInit {
 
